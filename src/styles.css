@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Super Funky";
+  src: url("src/superfunky.tff") format("truetype");
+}
+
+@font-face {
+  font-family: "Font";
+  src: url("src/font.otf") format("truetype");
+}
+
+body {
+  background-image: url("src/Image1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+img.gif {
+  width: 300px; /* Adjust the width to your desired size */
+  height: 300px; /* Adjust the height to your desired size */
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  animation: moveLeft 5s infinite alternate;
+}
+
+@keyframes moveLeft {
+  0% {
+    left: 5%;
+  }
+  50% {
+    left: 30%;
+  }
+  100% {
+    left: 5%;
+  }
+}
+
+img.gif2 {
+  width: 200px; /* Adjust the width to your desired size */
+  height: 200px; /* Adjust the height to your desired size */
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#chaz {
+  background-image: url("src/Image1.jpg");
+  /* Add any other styles for the element */
+}
+
+#app {
+  text-align: center;
+  padding-top: 100px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-family: "Super Funky", sans-serif;
+  font-size: 36px;
+  animation: blink 3s linear infinite; /* Adjust the animation properties */
+}
+
+#connectButton {
+  font-family: "Font", sans-serif;
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 200px;
+}
+
+#claimButton {
+  font-family: "Font", sans-serif;
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 600px;
+}
+
+#claimButtonContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#claimableTokensMessage {
+  font-family: "Font", sans-serif;
+  font-size: 24px;
+  text-align: end;
+  background-color: white;
+  padding: 30px 10px; /* Increase the padding values to make the background longer */
+  display: inline-block;
+  position: absolute;
+  top: 90%; /* Adjust the top value to position the element closer to the bottom */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  border-radius: 60px;
+  animation: fadeIn 2s ease-in-out;
+}
